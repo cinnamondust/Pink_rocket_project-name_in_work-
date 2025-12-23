@@ -6,7 +6,6 @@ public class PowerUp : MonoBehaviour
     public PowerUpType type;
 
     public float fallSpeed = 0.25f;
-
     void Update()
     {
         // Power-up spada w dół
@@ -24,7 +23,7 @@ public class PowerUp : MonoBehaviour
                 if (type == PowerUpType.Shield)
                     player.ActivateShield();
                 if (type == PowerUpType.Medkit)
-                    player.Heal(20);
+                    player.Heal(1);
             }
 
             Destroy(gameObject);
